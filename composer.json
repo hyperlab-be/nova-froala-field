@@ -1,5 +1,5 @@
 {
-    "name": "hyperlab-be/nova-froala-field",
+    "name": "froala/nova-froala-field",
     "description": "A Laravel Nova Froala WYSIWYG Editor Field.",
     "keywords": [
         "laravel",
@@ -9,12 +9,12 @@
         "froala",
         "editor"
     ],
-    "homepage": "https://github.com/hyperlab-be/nova-froala-field",
+    "homepage": "https://github.com/froala/nova-froala-field",
     "license": "MIT",
     "authors": [
         {
-            "name": "Michiel Kempen",
-            "email": "michiel.kempen@hyperlab.be",
+            "name": "Slava Razum",
+            "email": "modern.web.artisan@gmail.com",
             "role": "Developer"
         }
     ],

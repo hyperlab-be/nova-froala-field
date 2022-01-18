@@ -3,7 +3,7 @@ let mix = require('laravel-mix');
 let distPath = 'dist';
 
 mix.setPublicPath(distPath)
-    .js('resources/js/field.js', 'js').vue()
+    .js('resources/js/field.js', 'js')
     .sass('resources/sass/field.scss', 'css')
     .copy(
         'node_modules/froala-editor/css/froala_style.min.css',
@@ -37,7 +37,6 @@ mix.setPublicPath(distPath)
             chunkFilename: 'vendor/nova/froala/[name].js',
         },
         resolve: {
-            symlinks: false,
-            fallback: { crypto: false },
+            symlinks: false
         },
     });
