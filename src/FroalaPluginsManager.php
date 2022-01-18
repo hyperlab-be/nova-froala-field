@@ -15,35 +15,6 @@ class FroalaPluginsManager implements FroalaPlugins
         $this->config = $config;
     }
 
-    private function importTuiImageManager(): self
-    {
-        if ($this->config->get('nova.froala-field.options.tuiEnable')) {
-            Nova::style(
-                'tui-editor',
-                FroalaFieldServiceProvider::ASSETS_DIST_DIRECTORY.'/css/plugins/tui-image-editor/tui-image-editor.min.css'
-            );
-            Nova::style(
-                'tui-color-picker',
-                FroalaFieldServiceProvider::ASSETS_DIST_DIRECTORY.'/css/plugins/tui-image-editor/tui-color-picker.min.css'
-            );
-
-            Nova::script(
-                'fabric',
-                FroalaFieldServiceProvider::ASSETS_DIST_DIRECTORY.'/js/plugins/tui-image-editor/fabric.js'
-            );
-            Nova::script(
-                'tui-codesnippet',
-                FroalaFieldServiceProvider::ASSETS_DIST_DIRECTORY.'/js/plugins/tui-image-editor/tui-code-snippet.min.js'
-            );
-            Nova::script(
-                'tui-image-editor',
-                FroalaFieldServiceProvider::ASSETS_DIST_DIRECTORY.'/js/plugins/tui-image-editor/tui-image-editor.min.js'
-            );
-        }
-
-        return $this;
-    }
-
     private function importFontAwesome(): self
     {
         if (Str::startsWith(
@@ -58,7 +29,6 @@ class FroalaPluginsManager implements FroalaPlugins
 
     public function import()
     {
-        $this->importTuiImageManager()
-            ->importFontAwesome();
+        $this->importFontAwesome();
     }
 }

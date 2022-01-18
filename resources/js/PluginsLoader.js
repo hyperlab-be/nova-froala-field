@@ -33,17 +33,6 @@ class PluginsLoader {
             }
         }
 
-        if (this.options.tuiEnable) {
-            try {
-                await import(
-                    /* webpackChunkName: "image_tui.min" */
-                    'froala-editor/js/third_party/image_tui.min.js'
-                );
-            } catch (e) {
-                this.errorPluginLoadNotification('TUI Advanced Image Editor');
-            }
-        }
-
         return true;
     }
 
