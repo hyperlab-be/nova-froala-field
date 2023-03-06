@@ -1,6 +1,6 @@
 <?php
 
-namespace Froala\NovaFroalaField;
+namespace MichielKempen\NovaFroalaField;
 
 use Illuminate\Contracts\Config\Repository;
 use Illuminate\Support\Str;

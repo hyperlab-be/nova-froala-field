@@ -1,9 +1,9 @@
 <?php
 
-namespace Froala\NovaFroalaField\Tests\Fixtures;
+namespace MichielKempen\NovaFroalaField\Tests\Fixtures;
 
-use Froala\NovaFroalaField\Froala;
-use Froala\NovaFroalaField\Tests\TestCase;
+use MichielKempen\NovaFroalaField\Froala;
+use MichielKempen\NovaFroalaField\Tests\TestCase;
 use Illuminate\Http\Request;
 use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Resource;

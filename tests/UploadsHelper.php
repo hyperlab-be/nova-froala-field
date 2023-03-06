@@ -1,8 +1,8 @@
 <?php
 
-namespace Froala\NovaFroalaField\Tests;
+namespace MichielKempen\NovaFroalaField\Tests;
 
-use function Froala\NovaFroalaField\nova_version_at_least;
+use function MichielKempen\NovaFroalaField\nova_version_at_least;
 use Illuminate\Foundation\Testing\TestResponse;
 use Illuminate\Http\UploadedFile;
 use Illuminate\Support\Facades\Storage;

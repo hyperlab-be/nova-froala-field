@@ -1,6 +1,6 @@
 <?php
 
-namespace Froala\NovaFroalaField;
+namespace MichielKempen\NovaFroalaField;
 
 interface FroalaPlugins
 {

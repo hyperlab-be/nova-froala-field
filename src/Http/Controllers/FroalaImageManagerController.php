@@ -1,8 +1,8 @@
 <?php
 
-namespace Froala\NovaFroalaField\Http\Controllers;
+namespace MichielKempen\NovaFroalaField\Http\Controllers;
 
-use Froala\NovaFroalaField\Froala;
+use MichielKempen\NovaFroalaField\Froala;
 use Laravel\Nova\Http\Requests\NovaRequest;
 
 class FroalaImageManagerController

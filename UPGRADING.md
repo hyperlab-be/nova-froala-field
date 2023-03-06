@@ -9,7 +9,7 @@ Upgrade guide for major versions which have breaking changes.
 Only one step required for upgrading to _Froala 3_:
 
 ```bash
-composer require froala/nova-froala-field
+composer require michielkempen/nova-froala-field
 ```
 
 Done!
@@ -21,7 +21,7 @@ If you want to use _Font Awesome 5_, please read the [instruction](README.md#fon
 ### Additional
 
 1. Toolbar Buttons configuration format has been changed in 3.0 version.
-   You can check new format in the lateset config file version: [config file](https://github.com/froala/nova-froala-field/blob/master/config/froala-field.php)
+   You can check new format in the lateset config file version: [config file](https://github.com/michielkempen/nova-froala-field/blob/master/config/froala-field.php)
 2. If you use any 3rd party plugins such as: Embed.ly, SCAYT Web SpellChecker... make force republish:
    ```bash
    php artisan vendor:publish --tag=nova-froala-field-plugins --force

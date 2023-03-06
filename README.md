@@ -3,10 +3,10 @@
 <p align="center"><strong>Froala WYSIWYG Editor</strong> field for Laravel Nova</p>
 
 <p align="center">
-  <a href="https://packagist.org/packages/froala/nova-froala-field"><img src="https://img.shields.io/packagist/v/froala/nova-froala-field.svg?style=flat-square" alt="Latest Version on Packagist"></img></a>
-  <a href="https://travis-ci.org/froala/nova-froala-field"><img src="https://img.shields.io/travis/froala/nova-froala-field/master.svg?style=flat-square" alt="Build Status"></img></a>
+  <a href="https://packagist.org/packages/michielkempen/nova-froala-field"><img src="https://img.shields.io/packagist/v/michielkempen/nova-froala-field.svg?style=flat-square" alt="Latest Version on Packagist"></img></a>
+  <a href="https://travis-ci.org/michielkempen/nova-froala-field"><img src="https://img.shields.io/travis/michielkempen/nova-froala-field/master.svg?style=flat-square" alt="Build Status"></img></a>
   <a href="https://github.styleci.io/repos/151840835"><img src="https://github.styleci.io/repos/151840835/shield?branch=master" alt="Code Style Status"></a>
-  <a href="https://packagist.org/packages/froala/nova-froala-field"><img src="https://img.shields.io/packagist/dt/froala/nova-froala-field.svg?style=flat-square" alt="Total Downloads"></a>
+  <a href="https://packagist.org/packages/michielkempen/nova-froala-field"><img src="https://img.shields.io/packagist/dt/michielkempen/nova-froala-field.svg?style=flat-square" alt="Total Downloads"></a>
 </p>
 
 ## Introduction
@@ -28,17 +28,17 @@ For upgrading to **Froala 3**, check out – [Upgrading Instructions](UPGRADING.
 You can install the package into a Laravel application that uses [Nova](https://nova.laravel.com) via composer:
 
 ```bash
-composer require froala/nova-froala-field
+composer require michielkempen/nova-froala-field
 ```
 
 ## Usage
 
-Just use the `Froala\NovaFroalaField\Froala` field in your Nova resource:
+Just use the `MichielKempen\NovaFroalaField\Froala` field in your Nova resource:
 
 ```php
 namespace App\Nova;
 
-use Froala\NovaFroalaField\Froala;
+use MichielKempen\NovaFroalaField\Froala;
 
 class Article extends Resource
 {
@@ -62,7 +62,7 @@ class Article extends Resource
 To change any of config values for _froala field_, publish a config file:
 
 ```bash
-php artisan vendor:publish --tag=config --provider=Froala\\NovaFroalaField\\FroalaFieldServiceProvider
+php artisan vendor:publish --tag=config --provider=MichielKempen\\NovaFroalaField\\FroalaFieldServiceProvider
 ```
 
 ## Customize Editor Options
@@ -141,7 +141,7 @@ Also you have an ability to switch to the `trix` driver to use its upload system
 To use `froala` driver, publish and run a migration:
 
 ```bash
-php artisan vendor:publish --tag=migrations --provider=Froala\\NovaFroalaField\\FroalaFieldServiceProvider 
+php artisan vendor:publish --tag=migrations --provider=MichielKempen\\NovaFroalaField\\FroalaFieldServiceProvider 
 php artisan migrate
 ```
 
@@ -180,7 +180,7 @@ you can use `trix` driver in config file:
 To allow users to upload images, files and videos, just like with _Trix_ field, chain the `withFiles` method onto the field's definition. When calling the `withFiles` method, you should pass the name of the filesystem disk that photos should be stored on:
 
 ```php
-use Froala\NovaFroalaField\Froala;
+use MichielKempen\NovaFroalaField\Froala;
 
 Froala::make('Content')->withFiles('public');
 ```
@@ -188,7 +188,7 @@ Froala::make('Content')->withFiles('public');
 And also, in your `app/Console/Kernel.php` file, you should register a [daily job](https://laravel.com/docs/5.7/scheduling) to prune any stale attachments from the pending attachments table and storage:
 
 ```php
-use Froala\NovaFroalaField\Jobs\PruneStaleAttachments;
+use MichielKempen\NovaFroalaField\Jobs\PruneStaleAttachments;
 
 
 /**
@@ -316,7 +316,7 @@ You can set max upload filesize for attachments. If set to `null`, max upload fi
 According to _Froala_ [Display Edited Content](https://www.froala.com/wysiwyg-editor/docs/overview#frontend) documentation you should publish _Froala_ styles:
 
 ```bash
-php artisan vendor:publish --tag=froala-styles --provider=Froala\\NovaFroalaField\\FroalaFieldServiceProvider 
+php artisan vendor:publish --tag=froala-styles --provider=MichielKempen\\NovaFroalaField\\FroalaFieldServiceProvider 
 ```
 
 include into view where an edited content is shown:
@@ -365,7 +365,7 @@ To setup your license key, uncomment `key` option in the config file and set `FR
 To enable a button that uses some a 3rd party service and needs additional script including, like: *Embed.ly*, *TUI Advanced Image Editor* or *SCAYT Web SpellChecker*, you should publish 3rd party scripts:
 
 ```bash
-php artisan vendor:publish --tag=nova-froala-field-plugins --provider=Froala\\NovaFroalaField\\FroalaFieldServiceProvider
+php artisan vendor:publish --tag=nova-froala-field-plugins --provider=MichielKempen\\NovaFroalaField\\FroalaFieldServiceProvider
 ```
 
 Script will be dynamically imported when you enable `embedly` or `spellChecker` buttons.

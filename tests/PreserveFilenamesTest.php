@@ -1,8 +1,8 @@
 <?php
 
-namespace Froala\NovaFroalaField\Tests;
+namespace MichielKempen\NovaFroalaField\Tests;
 
-use Froala\NovaFroalaField\Models\PendingAttachment;
+use MichielKempen\NovaFroalaField\Models\PendingAttachment;
 use Illuminate\Http\Response;
 use Illuminate\Support\Facades\Storage;
 

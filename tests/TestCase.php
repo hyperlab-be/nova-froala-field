@@ -1,10 +1,10 @@
 <?php
 
-namespace Froala\NovaFroalaField\Tests;
+namespace MichielKempen\NovaFroalaField\Tests;
 
-use Froala\NovaFroalaField\FroalaFieldServiceProvider;
-use Froala\NovaFroalaField\Tests\Fixtures\TestResource;
-use Froala\NovaFroalaField\Tests\Fixtures\User;
+use MichielKempen\NovaFroalaField\FroalaFieldServiceProvider;
+use MichielKempen\NovaFroalaField\Tests\Fixtures\TestResource;
+use MichielKempen\NovaFroalaField\Tests\Fixtures\User;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Route;
 use Laravel\Nova\Nova;

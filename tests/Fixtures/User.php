@@ -1,6 +1,6 @@
 <?php
 
-namespace Froala\NovaFroalaField\Tests\Fixtures;
+namespace MichielKempen\NovaFroalaField\Tests\Fixtures;
 
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;

@@ -1,6 +1,6 @@
 <?php
 
-namespace Froala\NovaFroalaField\Tests;
+namespace MichielKempen\NovaFroalaField\Tests;
 
 use Illuminate\Support\Facades\Storage;
 

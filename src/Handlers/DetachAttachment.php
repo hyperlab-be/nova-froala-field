@@ -1,8 +1,8 @@
 <?php
 
-namespace Froala\NovaFroalaField\Handlers;
+namespace MichielKempen\NovaFroalaField\Handlers;
 
-use Froala\NovaFroalaField\Models\Attachment;
+use MichielKempen\NovaFroalaField\Models\Attachment;
 use Illuminate\Http\Request;
 
 class DetachAttachment

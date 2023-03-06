@@ -1,8 +1,8 @@
 <?php
 
-namespace Froala\NovaFroalaField;
+namespace MichielKempen\NovaFroalaField;
 
-use Froala\NovaFroalaField\Http\Controllers\FroalaToTrixAttachmentAdapterController;
+use MichielKempen\NovaFroalaField\Http\Controllers\FroalaToTrixAttachmentAdapterController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
 use Laravel\Nova\Events\ServingNova;

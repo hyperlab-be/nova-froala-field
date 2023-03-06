@@ -1,9 +1,9 @@
 <?php
 
-namespace Froala\NovaFroalaField\Handlers;
+namespace MichielKempen\NovaFroalaField\Handlers;
 
-use Froala\NovaFroalaField\Froala;
-use Froala\NovaFroalaField\Models\PendingAttachment;
+use MichielKempen\NovaFroalaField\Froala;
+use MichielKempen\NovaFroalaField\Models\PendingAttachment;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Support\Facades\Storage;
@@ -14,14 +14,14 @@ class StorePendingAttachment
     /**
      * The field instance.
      *
-     * @var \Froala\NovaFroalaField\Froala
+     * @var \MichielKempen\NovaFroalaField\Froala
      */
     public $field;
 
     /**
      * Create a new invokable instance.
      *
-     * @param  \Froala\NovaFroalaField\Froala  $field
+     * @param  \MichielKempen\NovaFroalaField\Froala  $field
      * @return void
      */
     public function __construct(Froala $field)

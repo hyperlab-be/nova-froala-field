@@ -1,6 +1,6 @@
 <?php
 
-namespace Froala\NovaFroalaField\Http\Controllers;
+namespace MichielKempen\NovaFroalaField\Http\Controllers;
 
 use Laravel\Nova\Http\Controllers\TrixAttachmentController;
 use Laravel\Nova\Http\Requests\NovaRequest;

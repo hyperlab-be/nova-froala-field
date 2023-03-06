@@ -1,7 +1,7 @@
 <?php
 
-use Froala\NovaFroalaField\Http\Controllers\FroalaImageManagerController;
-use Froala\NovaFroalaField\Http\Controllers\FroalaUploadController;
+use MichielKempen\NovaFroalaField\Http\Controllers\FroalaImageManagerController;
+use MichielKempen\NovaFroalaField\Http\Controllers\FroalaUploadController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('{resource}/image-manager', FroalaImageManagerController::class.'@index');

@@ -1,8 +1,8 @@
 <?php
 
-namespace Froala\NovaFroalaField\Handlers;
+namespace MichielKempen\NovaFroalaField\Handlers;
 
-use Froala\NovaFroalaField\Froala;
+use MichielKempen\NovaFroalaField\Froala;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
@@ -12,14 +12,14 @@ class AttachedImagesList
     /**
      * The field instance.
      *
-     * @var \Froala\NovaFroalaField\Froala
+     * @var \MichielKempen\NovaFroalaField\Froala
      */
     public $field;
 
     /**
      * Create a new invokable instance.
      *
-     * @param  \Froala\NovaFroalaField\Froala  $field
+     * @param  \MichielKempen\NovaFroalaField\Froala  $field
      * @return void
      */
     public function __construct(Froala $field)

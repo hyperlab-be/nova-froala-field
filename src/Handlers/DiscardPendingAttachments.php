@@ -1,8 +1,8 @@
 <?php
 
-namespace Froala\NovaFroalaField\Handlers;
+namespace MichielKempen\NovaFroalaField\Handlers;
 
-use Froala\NovaFroalaField\Models\PendingAttachment;
+use MichielKempen\NovaFroalaField\Models\PendingAttachment;
 use Illuminate\Http\Request;
 
 class DiscardPendingAttachments

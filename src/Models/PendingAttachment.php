@@ -1,8 +1,8 @@
 <?php
 
-namespace Froala\NovaFroalaField\Models;
+namespace MichielKempen\NovaFroalaField\Models;
 
-use Froala\NovaFroalaField\Froala;
+use MichielKempen\NovaFroalaField\Froala;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Storage;
 
@@ -26,7 +26,7 @@ class PendingAttachment extends Model
      * Persist the given draft's pending attachments.
      *
      * @param  string  $draftId
-     * @param  \Froala\NovaFroalaField\Froala  $field
+     * @param  \MichielKempen\NovaFroalaField\Froala  $field
      * @param  mixed  $model
      * @return void
      */
@@ -38,7 +38,7 @@ class PendingAttachment extends Model
     /**
      * Persist the pending attachment.
      *
-     * @param  \Froala\NovaFroalaField\Froala $field
+     * @param  \MichielKempen\NovaFroalaField\Froala $field
      * @param  mixed $model
      * @return void
      * @throws \Exception

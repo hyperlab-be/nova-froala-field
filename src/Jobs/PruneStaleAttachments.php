@@ -1,8 +1,8 @@
 <?php
 
-namespace Froala\NovaFroalaField\Jobs;
+namespace MichielKempen\NovaFroalaField\Jobs;
 
-use Froala\NovaFroalaField\Models\PendingAttachment;
+use MichielKempen\NovaFroalaField\Models\PendingAttachment;
 
 class PruneStaleAttachments
 {

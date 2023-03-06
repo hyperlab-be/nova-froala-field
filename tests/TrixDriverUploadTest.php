@@ -1,10 +1,10 @@
 <?php
 
-namespace Froala\NovaFroalaField\Tests;
+namespace MichielKempen\NovaFroalaField\Tests;
 
-use function Froala\NovaFroalaField\nova_version_at_least;
-use Froala\NovaFroalaField\Tests\Fixtures\Article;
-use Froala\NovaFroalaField\Tests\Fixtures\TestServiceProvider;
+use function MichielKempen\NovaFroalaField\nova_version_at_least;
+use MichielKempen\NovaFroalaField\Tests\Fixtures\Article;
+use MichielKempen\NovaFroalaField\Tests\Fixtures\TestServiceProvider;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Facades\Storage;
 use Laravel\Nova\Trix\Attachment;

@@ -1,11 +1,11 @@
 <?php
 
-namespace Froala\NovaFroalaField\Tests;
+namespace MichielKempen\NovaFroalaField\Tests;
 
-use Froala\NovaFroalaField\Models\Attachment;
-use Froala\NovaFroalaField\Models\PendingAttachment;
-use function Froala\NovaFroalaField\nova_version_at_least;
-use Froala\NovaFroalaField\Tests\Fixtures\Article;
+use MichielKempen\NovaFroalaField\Models\Attachment;
+use MichielKempen\NovaFroalaField\Models\PendingAttachment;
+use function MichielKempen\NovaFroalaField\nova_version_at_least;
+use MichielKempen\NovaFroalaField\Tests\Fixtures\Article;
 use Illuminate\Support\Facades\Storage;
 
 class FroalaUploadControllerTest extends TestCase

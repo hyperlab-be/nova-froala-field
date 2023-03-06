@@ -1,6 +1,6 @@
 <?php
 
-namespace Froala\NovaFroalaField\Models;
+namespace MichielKempen\NovaFroalaField\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Storage;

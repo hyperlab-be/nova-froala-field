@@ -1,6 +1,6 @@
 <?php
 
-namespace Froala\NovaFroalaField\Http\Controllers;
+namespace MichielKempen\NovaFroalaField\Http\Controllers;
 
 use Illuminate\Routing\Controller;
 use Laravel\Nova\Http\Requests\NovaRequest;

@@ -1,8 +1,8 @@
 <?php
 
-namespace Froala\NovaFroalaField\Handlers;
+namespace MichielKempen\NovaFroalaField\Handlers;
 
-use Froala\NovaFroalaField\Models\Attachment;
+use MichielKempen\NovaFroalaField\Models\Attachment;
 use Illuminate\Http\Request;
 
 class DeleteAttachments
@@ -10,14 +10,14 @@ class DeleteAttachments
     /**
      * The field instance.
      *
-     * @var \Froala\NovaFroalaField\Froala
+     * @var \MichielKempen\NovaFroalaField\Froala
      */
     public $field;
 
     /**
      * Create a new class instance.
      *
-     * @param  \Froala\NovaFroalaField\Froala  $field
+     * @param  \MichielKempen\NovaFroalaField\Froala  $field
      * @return void
      */
     public function __construct($field)
